@@ -114,7 +114,7 @@
 &trans  &trans        &trans        &trans        &trans        &mkp RCLK     &trans                  &trans             &trans                                                         &trans            &trans
             >;
 
-            sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&sensor_rotate_kp LG(PLUS) LG(MINUS)>;
         };
 
         mouse_layer {

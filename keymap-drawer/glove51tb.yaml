@@ -189,9 +189,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+Alt+LEFT ARROW
-  - Alt+RIGHT
   - {t: ▽, type: trans}
+  - Alt+Ctl+LEFT ARROW
+  - Alt+Ctl+RIGHT ARROW
   - '&mkp LCLK'
   - '&mkp RCLK'
   - '&mkp MCLK'

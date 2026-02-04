@@ -20,7 +20,7 @@ layers:
   - F
   - G
   - {t: ▽, type: trans}
-  - Gui+SPACE
+  - Ctl+SPACE
   - H
   - J
   - K

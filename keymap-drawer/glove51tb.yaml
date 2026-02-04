@@ -45,13 +45,13 @@ layers:
   - SYM
   - LEFT CONTROL
   - LEFT ALT
-  - LEFT GUI
+  - Gui+LEFT
+  - Gui+RIGHT
   - '&mkp LCLK'
-  - SPACE
   - SPACE
   - FUN
   - \
-  - {t: ▽, type: trans}
+  - LEFT COMMAND
   NUM:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

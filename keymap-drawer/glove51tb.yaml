@@ -20,7 +20,7 @@ layers:
   - F
   - G
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+SPACE
   - H
   - J
   - K
@@ -176,7 +176,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Alt+ENTER
   - LEFT ARROW
   - DOWN ARROW
   - UP ARROW
@@ -189,8 +189,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '`'
+  - Ctl+Alt+LEFT ARROW
+  - Alt+RIGHT
   - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp RCLK'

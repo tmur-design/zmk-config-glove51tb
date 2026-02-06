@@ -186,8 +186,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '&fu'
+  - '&mail3'
   - '&mail1'
   - '&mail2'
   - Alt+Ctl+LEFT ARROW

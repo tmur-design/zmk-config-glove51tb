@@ -70,16 +70,32 @@
         };
     };
 
+    macros {
+        mail1: mail1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp O &kp S &kp E &kp W &kp A &kp SPACE &kp N &kp I &kp SPACE &kp N &kp A &kp T &kp T &kp E &kp SPACE &kp O &kp R &kp I &kp M &kp A &kp S &kp U &kp DOT &kp ENTER &kp T &kp A &kp N &kp A &kp K &kp A &kp SPACE &kp R &kp I &kp K &kp I &kp SPACE &kp D &kp E &kp S &kp U &kp DOT>;
+            label = "MAIL1";
+        };
+
+        mail2: mail2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U &kp SPACE &kp O &kp N &kp E &kp G &kp A &kp I &kp SPACE &kp I &kp T &kp A &kp S &kp H &kp I &kp M &kp A &kp S &kp U &kp DOT &kp ENTER &kp ENTER &kp T &kp A &kp N &kp A &kp K &kp A &kp SPACE &kp R &kp I &kp K &kp I>;
+            label = "MAIL2";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             label = "DEFAULT";
             bindings = <
-&kp ESC           &kp Q  &kp W             &kp E         &kp R         &kp T                                       &kp Y  &kp U  &kp I      &kp O    &kp P          &kp BSPC
-&kp TAB           &kp A  &kp S             &kp D         &kp F         &kp G          &trans     &kp LC(SPACE)     &kp H  &kp J  &kp K      &kp L    &kp SEMI       &kp RETURN
-&kp LEFT_SHIFT    &kp Z  &kp X             &kp C         &kp V         &kp B          &mo 5      &kp SINGLE_QUOTE  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &mo 2  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LG(LEFT)  &kp LG(RIGHT)  &mkp LCLK  &kp SPACE         &mo 3                             &kp BACKSLASH  &kp LEFT_COMMAND
+&kp ESC           &kp Q               &kp W             &kp E           &kp R             &kp T                                       &kp Y  &kp U              &kp I                &kp O                 &kp P                   &kp BSPC
+&kp TAB           &kp A               &kp S             &kp D           &kp F             &kp G          &trans     &kp LC(SPACE)     &kp H  &kp J              &kp K                &kp L                 &kp SEMI                &kp RETURN
+&kp LEFT_SHIFT    &mt LEFT_CONTROL Z  &mt LEFT_ALT X    &mt LEFT_GUI C  &mt LEFT_SHIFT V  &kp B          &mo 5      &kp SINGLE_QUOTE  &kp N  &mt RIGHT_SHIFT M  &mt RIGHT_GUI COMMA  &mt RIGHT_ALT PERIOD  &mt RIGHT_CONTROL FSLH  &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &mo 2               &kp LEFT_CONTROL  &kp LEFT_ALT    &kp LG(LEFT)      &kp LG(RIGHT)  &mkp LCLK  &kp SPACE         &mo 3                                                                &kp BACKSLASH           &kp LEFT_COMMAND
             >;
 
             sensor-bindings = <&mouse_wheel_scroll SCRL_UP SCRL_DOWN>;
@@ -108,10 +124,10 @@
         function_layer {
             label = "FUN";
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                  &kp NUMBER_6             &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0      &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &kp LC(LA(ENTER))       &kp LEFT_ARROW           &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp MINUS         &kp EQUAL
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT_ARROW))  &mkp LCLK       &mkp RCLK     &mkp MCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans  &trans        &trans        &trans        &trans        &mkp RCLK     &trans  &trans                  &trans                                                                  &trans            &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                     &kp NUMBER_6             &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0      &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans     &kp LC(LA(ENTER))       &kp LEFT_ARROW           &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp MINUS         &kp EQUAL
+&trans  &trans        &trans        &trans        &mail1        &mail2        &trans     &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT_ARROW))  &mkp LCLK       &mkp RCLK     &mkp MCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans  &trans        &trans        &trans        &trans        &trans        &mkp RCLK  &trans                  &trans                                                                  &trans            &trans
             >;
 
             sensor-bindings = <&sensor_rotate_kp LG(PLUS) LG(MINUS)>;

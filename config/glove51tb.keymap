@@ -81,7 +81,11 @@
         mail2: mail2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U &kp SPACE &kp O &kp N &kp E &kp G &kp A &kp I &kp SPACE &kp I &kp T &kp A &kp S &kp H &kp I &kp M &kp A &kp S &kp U &kp DOT &kp ENTER>;
+            bindings =
+                <&none &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U &kp SPACE &kp O &kp N &kp E &kp G &kp A &kp I &kp SPACE &kp I &kp T &kp A &kp S &kp H &kp I &kp M &kp A &kp S &kp U &kp DOT &kp ENTER &kp ENTER>,
+                <&macro_wait_time 100>,
+                <&kp T &kp A &kp N &kp A &kp K &kp A &kp SPACE &kp R &kp I &kp K &kp I>;
+
             label = "MAIL2";
         };
 

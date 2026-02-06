@@ -187,9 +187,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&fu'
   - '&mail1'
   - '&mail2'
-  - {t: ▽, type: trans}
   - Alt+Ctl+LEFT ARROW
   - Alt+Ctl+RIGHT ARROW
   - '&mkp LCLK'

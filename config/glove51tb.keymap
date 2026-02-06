@@ -84,7 +84,11 @@
             bindings =
                 <&none &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U &kp SPACE &kp O &kp N &kp E &kp G &kp A &kp I &kp SPACE &kp I &kp T &kp A &kp S &kp H &kp I &kp M &kp A &kp S &kp U &kp DOT &kp ENTER &kp ENTER>,
                 <&macro_wait_time 150>,
-                <&kp SPACE &kp BACKSPACE &kp T &kp A &kp N &kp A &kp TAB &kp TAB &kp ENTER>;
+                <&kp SPACE &kp BACKSPACE &kp T &kp A>,
+                <&macro_wait_time 100>,
+                <&kp N &kp A>,
+                <&macro_wait_time 100>,
+                <&kp TAB &kp TAB &kp ENTER>;
 
             label = "MAIL2";
         };

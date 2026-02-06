@@ -81,21 +81,7 @@
         mail2: mail2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&none &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U &kp SPACE &kp O &kp N &kp E &kp G &kp A &kp I &kp SPACE &kp I &kp T &kp A &kp S &kp H &kp I &kp M &kp A &kp S &kp U &kp DOT &kp ENTER &kp ENTER>,
-                <&macro_wait_time 150>,
-                <&kp SPACE &kp BACKSPACE &kp T>,
-                <&macro_wait_time 100>,
-                <&kp A>,
-                <&macro_wait_time 100>,
-                <&kp N>,
-                <&macro_wait_time 100>,
-                <&kp A>,
-                <&macro_wait_time 100>,
-                <&kp TAB>,
-                <&macro_wait_time 100>,
-                <&kp TAB &kp ENTER>;
-
+            bindings = <&none &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U &kp SPACE &kp O &kp N &kp E &kp G &kp A &kp I &kp SPACE &kp I &kp T &kp A &kp S &kp H &kp I &kp M &kp A &kp S &kp U &kp DOT &kp ENTER &kp ENTER>;
             label = "MAIL2";
         };
 
@@ -104,21 +90,6 @@
             #binding-cells = <0>;
             bindings = <&none &kp LS(X) &kp LS(K) &kp LS(B) &kp LS(M) &kp K &kp DOT &kp Z &kp MINUS &kp P &kp DOT &kp N &kp LS(Y)>;
             label = "FU";
-        };
-
-        mail3: mail3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&none &kp G &kp O &kp M &kp E &kp I &kp W &kp A &kp K &kp U &kp W &kp O &kp SPACE &kp O &kp K &kp A &kp K &kp E &kp S &kp I &kp T &kp E &kp SPACE &kp M &kp O &kp U &kp S &kp I &kp W &kp A &kp K &kp E>,
-                <&macro_wait_time 100>,
-                <&kp G>,
-                <&macro_wait_time 100>,
-                <&kp O>,
-                <&macro_wait_time 100>,
-                <&kp Z &kp A &kp I &kp M &kp A &kp S &kp E &kp N &kp DOT>;
-
-            label = "MAIL3";
         };
     };
 
@@ -162,7 +133,7 @@
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                     &kp NUMBER_6             &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0      &trans
 &trans  &trans        &trans        &trans        &trans        &trans        &trans     &kp LC(LA(ENTER))       &kp LEFT_ARROW           &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp MINUS         &kp EQUAL
-&trans  &trans        &trans        &fu           &mail3        &mail1        &mail2     &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT_ARROW))  &mkp LCLK       &mkp RCLK     &mkp MCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans  &trans        &trans        &none         &fu           &mail1        &mail2     &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT_ARROW))  &mkp LCLK       &mkp RCLK     &mkp MCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans  &trans        &trans        &trans        &trans        &trans        &mkp RCLK  &trans                  &trans                                                                  &trans            &trans
             >;
 

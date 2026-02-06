@@ -92,7 +92,7 @@
         fu: fu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&trans &kp LS(X) &kp LS(K) &kp LS(B) &kp LS(M) &kp K &kp DOT &kp Z &kp MINUS &kp P &kp DOT &kp N &kp LS(Y)>;
+            bindings = <&none &kp LS(X) &kp LS(K) &kp LS(B) &kp LS(M) &kp K &kp DOT &kp Z &kp MINUS &kp P &kp DOT &kp N &kp LS(Y)>;
             label = "FU";
         };
     };

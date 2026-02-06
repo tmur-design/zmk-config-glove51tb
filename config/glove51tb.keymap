@@ -84,11 +84,17 @@
             bindings =
                 <&none &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U &kp SPACE &kp O &kp N &kp E &kp G &kp A &kp I &kp SPACE &kp I &kp T &kp A &kp S &kp H &kp I &kp M &kp A &kp S &kp U &kp DOT &kp ENTER &kp ENTER>,
                 <&macro_wait_time 150>,
-                <&kp SPACE &kp BACKSPACE &kp T &kp A>,
+                <&kp SPACE &kp BACKSPACE &kp T>,
                 <&macro_wait_time 100>,
-                <&kp N &kp A>,
+                <&kp A>,
                 <&macro_wait_time 100>,
-                <&kp TAB &kp TAB &kp ENTER>;
+                <&kp N>,
+                <&macro_wait_time 100>,
+                <&kp A>,
+                <&macro_wait_time 100>,
+                <&kp TAB>,
+                <&macro_wait_time 100>,
+                <&kp TAB &kp ENTER>;
 
             label = "MAIL2";
         };
@@ -103,7 +109,15 @@
         mail3: mail3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp G &kp O &kp M &kp E &kp I &kp W &kp A &kp K &kp U &kp W &kp O &kp SPACE &kp O &kp K &kp A &kp K &kp E &kp S &kp I &kp T &kp E &kp SPACE &kp M &kp O &kp U &kp S &kp I &kp W &kp A &kp K &kp E &kp G &kp O &kp Z &kp A &kp I &kp M &kp A &kp S &kp E &kp N &kp DOT>;
+            bindings =
+                <&none &kp G &kp O &kp M &kp E &kp I &kp W &kp A &kp K &kp U &kp W &kp O &kp SPACE &kp O &kp K &kp A &kp K &kp E &kp S &kp I &kp T &kp E &kp SPACE &kp M &kp O &kp U &kp S &kp I &kp W &kp A &kp K &kp E>,
+                <&macro_wait_time 100>,
+                <&kp G>,
+                <&macro_wait_time 100>,
+                <&kp O>,
+                <&macro_wait_time 100>,
+                <&kp Z &kp A &kp I &kp M &kp A &kp S &kp E &kp N &kp DOT>;
+
             label = "MAIL3";
         };
     };

@@ -84,6 +84,13 @@
             bindings = <&none &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U &kp SPACE &kp O &kp N &kp E &kp G &kp A &kp I &kp SPACE &kp I &kp T &kp A &kp S &kp H &kp I &kp M &kp A &kp S &kp U &kp DOT &kp ENTER &kp ENTER &kp T &kp A &kp N &kp A &kp K &kp A &kp SPACE &kp R &kp I &kp K &kp I>;
             label = "MAIL2";
         };
+
+        fu: fu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(X) &kp LS(K) &kp LS(B) &kp LS(M) &kp K &kp DOT &kp Z &kp MINUS &kp P &kp DOT &kp N &kp LS(Y)>;
+            label = "FU";
+        };
     };
 
     keymap {
@@ -126,7 +133,7 @@
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                     &kp NUMBER_6             &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0      &trans
 &trans  &trans        &trans        &trans        &trans        &trans        &trans     &kp LC(LA(ENTER))       &kp LEFT_ARROW           &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp MINUS         &kp EQUAL
-&trans  &trans        &trans        &trans        &mail1        &mail2        &trans     &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT_ARROW))  &mkp LCLK       &mkp RCLK     &mkp MCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans  &trans        &trans        &trans        &fu           &mail1        &mail2     &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT_ARROW))  &mkp LCLK       &mkp RCLK     &mkp MCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans  &trans        &trans        &trans        &trans        &trans        &mkp RCLK  &trans                  &trans                                                                  &trans            &trans
             >;
 

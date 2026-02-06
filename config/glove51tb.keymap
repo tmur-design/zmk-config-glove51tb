@@ -91,6 +91,13 @@
             bindings = <&none &kp LS(X) &kp LS(K) &kp LS(B) &kp LS(M) &kp K &kp DOT &kp Z &kp MINUS &kp P &kp DOT &kp N &kp LS(Y)>;
             label = "FU";
         };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(R) &kp I &kp L &kp K &kp I &kp D &kp N2 &kp N3 &kp N7 &kp N5>;
+            label = "NEW_MACRO";
+        };
     };
 
     keymap {
@@ -131,10 +138,10 @@
         function_layer {
             label = "FUN";
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                     &kp NUMBER_6             &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0      &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans     &kp LC(LA(ENTER))       &kp LEFT_ARROW           &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp MINUS         &kp EQUAL
-&trans  &trans        &trans        &none         &fu           &mail1        &mail2     &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT_ARROW))  &mkp LCLK       &mkp RCLK     &mkp MCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans  &trans        &trans        &trans        &trans        &trans        &mkp RCLK  &trans                  &trans                                                                  &trans            &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp NUMBER_5                                     &kp NUMBER_6             &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0      &trans
+&trans  &trans        &trans        &trans          &trans        &trans        &trans     &kp LC(LA(ENTER))       &kp LEFT_ARROW           &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp MINUS         &kp EQUAL
+&trans  &trans        &trans        &new_macro      &fu           &mail1        &mail2     &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT_ARROW))  &mkp LCLK       &mkp RCLK     &mkp MCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans  &trans        &trans        &kp LS(LG(N5))  &trans        &trans        &mkp RCLK  &trans                  &trans                                                                  &trans            &trans
             >;
 
             sensor-bindings = <&sensor_rotate_kp LG(PLUS) LG(MINUS)>;
